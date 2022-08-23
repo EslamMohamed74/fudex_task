@@ -1,0 +1,10 @@
+.input-group {
+  width: 97.4%;
+}
+.fa-list,
+.fa-th-large {
+  cursor: pointer;
+  &.selected {
+    color: #ffc107;
+  }
+}
