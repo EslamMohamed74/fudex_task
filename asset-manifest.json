@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/fudex_task/static/css/main.ca385ff0.css",
-    "main.js": "/fudex_task/static/js/main.7ee9987b.js",
+    "main.js": "/fudex_task/static/js/main.1632f972.js",
     "index.html": "/fudex_task/index.html",
     "main.ca385ff0.css.map": "/fudex_task/static/css/main.ca385ff0.css.map",
-    "main.7ee9987b.js.map": "/fudex_task/static/js/main.7ee9987b.js.map"
+    "main.1632f972.js.map": "/fudex_task/static/js/main.1632f972.js.map"
   },
   "entrypoints": [
     "static/css/main.ca385ff0.css",
-    "static/js/main.7ee9987b.js"
+    "static/js/main.1632f972.js"
   ]
 }
