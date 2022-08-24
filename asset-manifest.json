@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fudex_task/static/css/main.ca385ff0.css",
+    "main.js": "/fudex_task/static/js/main.69282255.js",
+    "index.html": "/fudex_task/index.html",
+    "main.ca385ff0.css.map": "/fudex_task/static/css/main.ca385ff0.css.map",
+    "main.69282255.js.map": "/fudex_task/static/js/main.69282255.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca385ff0.css",
+    "static/js/main.69282255.js"
+  ]
+}
