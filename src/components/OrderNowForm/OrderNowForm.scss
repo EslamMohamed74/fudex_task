@@ -1,0 +1,7 @@
+.form-group p {
+  color: #bf1650;
+  &::before {
+    display: inline;
+    content: "⚠ ";
+  }
+}

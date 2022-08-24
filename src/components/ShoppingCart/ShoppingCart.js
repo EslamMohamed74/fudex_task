@@ -43,14 +43,18 @@ const ShoppingCart = () => {
           </div>
         </div>
       </div>
-      <div className="row">
-        <Link
-          to="/order"
-          className="btn  btn-outline-primary text-uppercase mx-auto my-2"
-        >
-          Order now{" "}
-        </Link>
-      </div>
+      {cartItemCount ? (
+        <div className="row">
+          <Link
+            to="/order"
+            className="btn  btn-outline-primary text-uppercase mx-auto my-2"
+          >
+            Order now{" "}
+          </Link>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

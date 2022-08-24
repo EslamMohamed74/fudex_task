@@ -1,4 +1,11 @@
-import { FETCH_PRODUCTS, ADD_PRODUCT_TO_CART, REMOVE_PRODUCT_FROM_CART, INCREMENT_CART_ITEM_QUANTITY, DECREMENT_CART_ITEM_QUANTITY } from './ActionTypes';
+import {
+  FETCH_PRODUCTS,
+  ADD_PRODUCT_TO_CART,
+  REMOVE_PRODUCT_FROM_CART,
+  INCREMENT_CART_ITEM_QUANTITY,
+  DECREMENT_CART_ITEM_QUANTITY,
+  CLEAR_CART,
+} from "./ActionTypes";
 import productsApi from '../../apis/productsApi'
 
 export const fetchProducts = () => async dispatch => {
@@ -81,3 +88,9 @@ export const decrementCartQuantity = (productId) => (dispatch, getState) => {
 
 };
 
+export const clearCart = () => (dispatch) => {
+  dispatch({
+    type: CLEAR_CART,
+    payload: [],
+  });
+};

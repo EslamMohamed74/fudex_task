@@ -5,7 +5,7 @@ import Pagination from "../../components/Pagination/Pagination";
 import { fetchProducts } from "../../redux/actions";
 import "./Home.scss";
 const Home = () => {
-  const [gridView, setGridView] = useState(false);
+  const [gridView, setGridView] = useState(true);
   const [colValue, setColValue] = useState("col-lg-4 col-md-6");
   const [perPage, setPerPage] = useState(12);
   const [currentPage, setCurrentPage] = useState(1);
@@ -60,21 +60,21 @@ const Home = () => {
               <div className="card ">
                 <div className="card-header d-flex justify-content-end">
                   <span className="mr-3">Change Layout: </span>
-                  <div className="list mr-3">
-                    <i
-                      className={`fa fa-list ${!gridView ? "selected" : ""}`}
-                      onClick={() => {
-                        setColValue("col-lg-4 col-md-6");
-                        setGridView(false);
-                      }}
-                    />
-                  </div>
-                  <div className="grid">
+                  <div className="grid mr-3">
                     <i
                       className={`fa fa-th-large ${gridView ? "selected" : ""}`}
                       onClick={() => {
-                        setColValue("col-12");
+                        setColValue("col-lg-4 col-md-6");
                         setGridView(true);
+                      }}
+                    />
+                  </div>
+                  <div className="list">
+                    <i
+                      className={`fa fa-list ${!gridView ? "selected" : ""}`}
+                      onClick={() => {
+                        setColValue("col-12");
+                        setGridView(false);
                       }}
                     />
                   </div>
@@ -108,7 +108,7 @@ const Home = () => {
               (product) => {
                 return (
                   <div
-                    className={`${colValue} ${gridView ? "grid" : ""} mb-4`}
+                    className={`${colValue} ${!gridView ? "list" : ""} mb-4`}
                     key={product.id}
                   >
                     <Product product={product} />
